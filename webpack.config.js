@@ -4,7 +4,7 @@ const DEV = process.env.NODE_ENV !== "production";
 
 module.exports = {
   entry: {
-    app: ["./lib/index.jsx"]
+    app: ["./src/index.tsx"]
   },
   output: {
     path: path.join(__dirname, "bundle"),
@@ -20,7 +20,7 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.(js|jsx|ts|tsx)$/,
         exclude: /node_modules\/.*/,
         loader: "babel-loader",
         query: {

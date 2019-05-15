@@ -7,45 +7,31 @@ import { Input } from "phaser";
 let isUserDragging = false;
 let deltaX = 0,
   deltaY = 0;
-export default class Game extends Phaser.Game {
-  constructor() {
-    const canvasElement = document.getElementById(
-      "games-canvas"
-    ) as HTMLCanvasElement;
-    if (canvasElement) {
-      canvasElement.style.width = "100%";
-      canvasElement.style.height = "100%";
-      canvasElement.style.position = "absolute";
-      canvasElement.style.top = "0";
-      canvasElement.style.left = "0";
-      const config: GameConfig = {
-        title: "Game",
-        type: Phaser.CANVAS,
-        canvas: canvasElement,
-        width: screenWidth,
-        height: screenHeight,
-        scene: {
-          preload: preload,
-          create: create,
-          update: update
+export function gameInit() {
+  const config: GameConfig = {
+    title: "Game",
+    type: Phaser.CANVAS,
+    width: screenWidth,
+    height: screenHeight,
+    scene: {
+      preload: preload,
+      create: create,
+      update: update
+    },
+    physics: {
+      default: "arcade",
+      arcade: {
+        gravity: {
+          y: -100
         },
-        physics: {
-          default: "arcade",
-          arcade: {
-            gravity: {
-              y: -100
-            },
-            fps: 60,
-            isPaused: false,
-            timeScale: 1
-          }
-        }
-      };
-      super(config);
+        fps: 60,
+        isPaused: false,
+        timeScale: 1
+      }
     }
-  }
+  };
+  const game = new Phaser.Game(config);
 }
-
 function preload() {
   this.load.setBaseURL("http://labs.phaser.io");
   this.load.image("background", "/assets/pics/the-end-by-iloe-and-made.jpg");
