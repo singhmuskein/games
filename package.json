@@ -1,0 +1,27 @@
+{
+    "name": "fk-cp-games",
+    "version": "0.0.1",
+    "description": "Games for Flipkart built using Phaser",
+    "scripts": {
+        "start": "webpack-dev-server --history-api-fallback --host 0.0.0.0 --port 3000",
+        "watch": "rm -rf lib/ && tsc -w"
+    },
+    "dependencies": {
+        "phaser": "3.16.2",
+        "webpack": "3.8.0",
+        "react": "16.2.0",
+        "react-dom": "16.2.0"
+    },
+    "devDependencies": {
+        "@types/react": "16.0.40",
+        "babel-cli": "6.6.5",
+        "@types/react-dom": "16.0.4",
+        "webpack-dev-server": "2.5.1",
+        "typescript": "2.8.3",
+        "babel-loader": "7.1.1",
+        "babel-preset-react": "6.24.1",
+        "babel-plugin-add-module-exports": "0.2.1",
+        "babel-preset-stage-2": "6.24.1",
+        "babel-preset-es2015": "6.24.1"
+    }
+}
