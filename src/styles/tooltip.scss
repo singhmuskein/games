@@ -1,0 +1,51 @@
+@import "./common";
+
+.tool-tip-container {
+  display: $displayFlex;
+  margin: 8% 10% 0% 10%;
+}
+.img-container {
+  background-color: rgb(254, 239, 206);
+  display: $displayFlex;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+  border-radius: 30px;
+  padding: 5px;
+}
+.tooltip {
+  background-color: rgb(254, 239, 206);
+  display: $displayFlex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 10px;
+}
+.tooltiptext {
+  max-width: 300px;
+  min-width: 210px;
+  background-color: rgb(254, 239, 206);
+  color: rgb(171, 126, 84);
+  margin: 5px;
+  text-align: $textAlign;
+  font-family: $fontFamily;
+  font-size: 0.55rem;
+  padding: 10px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent rgb(254, 239, 206) transparent transparent;
+}
+
+.image-circle {
+  width: 40px;
+  height: 40px;
+}

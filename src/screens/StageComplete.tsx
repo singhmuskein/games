@@ -1,13 +1,18 @@
 import * as React from "react";
-import { gameInit } from "../Game";
+import "../styles/stagecomplete.scss";
+import { Modal } from "../components/common";
 
 class StageComplete extends React.Component {
-  componentDidMount() {
-    // new Game();
-    gameInit();
-  }
+  // componentDidMount() {
+  //   // new Game();
+  //   gameInit();
+  // }
   render() {
-    return <div>muskein</div>;
+    return (
+      <div className='stage-complete'>
+        <Modal />
+      </div>
+    );
   }
 }
 

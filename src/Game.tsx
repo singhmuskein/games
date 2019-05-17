@@ -30,7 +30,7 @@ export function gameInit() {
       }
     }
   };
-  const game = new Phaser.Game(config);
+  new Phaser.Game(config);
 }
 function preload() {
   this.load.setBaseURL("http://labs.phaser.io");

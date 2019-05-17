@@ -1,0 +1,13 @@
+@import "./common";
+
+.modal-box-inner {
+  width: 59%;
+  border-radius: 5px;
+  border: solid rgb(252, 232, 182);
+  border-width: 1px;
+  background-color: $creamColor;
+  padding: 8px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-align: $textAlign;
+}
