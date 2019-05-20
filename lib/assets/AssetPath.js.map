@@ -1,1 +1,1 @@
-{"version":3,"file":"AssetPath.js","sourceRoot":"","sources":["../../src/assets/AssetPath.tsx"],"names":[],"mappings":";;AAAa,QAAA,MAAM,GAAG;IACpB,KAAK,EAAE,OAAO,CAAC,4BAA4B,CAAC;CAE7C,CAAC"}
+{"version":3,"file":"AssetPath.js","sourceRoot":"","sources":["../../src/assets/AssetPath.tsx"],"names":[],"mappings":";;AAAa,QAAA,MAAM,GAAG;IACpB,KAAK,EAAE,OAAO,CAAC,4BAA4B,CAAC;IAC5C,aAAa,EACX,4GAA4G;IAC9G,aAAa,EACX,4GAA4G;CAC/G,CAAC"}

@@ -1,0 +1,37 @@
+.home-image-container {
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  margin: 0px 15px 0px 15px;
+}
+
+.share-card-container {
+  margin-bottom: 3%;
+}
+
+.home-image {
+  width: 6%;
+  height: 3%;
+  background-color: rgb(231, 241, 254);
+  padding: 4%;
+  margin: 6px;
+  border-radius: 3px;
+}
+
+.share-this-game-text {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-family: monospace;
+  font-size: 16px;
+}
+.go-forward-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: rgb(209, 209, 209);
+}
