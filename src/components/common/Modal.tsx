@@ -7,9 +7,11 @@ ReactModal.setAppElement("#root");
 
 const Modal = (props: IModal) => {
   return (
-    <ReactModal style={customStyles} isOpen={props.isOpen}>
-      {props.children}
-    </ReactModal>
+    <div>
+      <ReactModal style={customStyles} isOpen={props.isOpen}>
+        {props.children}
+      </ReactModal>
+    </div>
   );
 };
 
@@ -18,8 +20,9 @@ const customStyles = {
     position: "absolute",
     top: "0px",
     left: "0px",
-    right: "0px",
+    right: "10px",
     bottom: "0px",
+    borderWidth: "0px",
     backgroundColor: "rgb(15,34,38)",
     borderRadius: "0px",
     padding: "0px",
