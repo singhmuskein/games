@@ -17,7 +17,7 @@ const ModalContainer = (props: IModalContainer) => {
         {props.children}
       </div>
 
-      <div className='yellow-button-container'>
+      <div onClick={props.onClick} className='yellow-button-container'>
         <div className='yellow-button-text'>{props.stageButton}</div>
       </div>
     </div>

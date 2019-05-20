@@ -3,4 +3,5 @@ export interface IModalContainer {
   stageStatus: string;
   stageButton: string;
   backgroundColor: string;
+  onClick: () => void;
 }

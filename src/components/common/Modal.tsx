@@ -2,47 +2,29 @@ import * as React from "react";
 import * as ReactModal from "react-modal";
 import { ToolTip, ModalContainer, ModalBoxInner } from "../common/index";
 import "../../styles/modal.scss";
+import { IModal } from "../../interfaces/Modal";
 
 ReactModal.setAppElement("#root");
 
-class Modal extends React.Component<any, any> {
-  constructor(props: any) {
+class Modal extends React.Component<IModal, {}> {
+  constructor(props: IModal) {
     super(props);
-    this.state = {
-      showModal: true
-    };
-
-    this.handleOpenModal = this.handleOpenModal.bind(this);
-    this.handleCloseModal = this.handleCloseModal.bind(this);
   }
-
-  handleOpenModal() {
-    this.setState({ showModal: true });
-  }
-
-  handleCloseModal() {
-    this.setState({ showModal: false });
-  }
-
-  public modalState() {
-    const stateRef = this.state;
-    return stateRef["showModal"];
-  }
-
   render() {
     return (
-      <ReactModal style={customStyles} isOpen={this.modalState()}>
+      <ReactModal style={customStyles} isOpen={this.props.isOpen}>
         <div className='modal-align-center'>
           <ModalContainer
-            backgroundColor='rgb(28,183,150)'
-            stageStatus='Stage Failed'
-            stageButton='Try Again'
+            backgroundColor={this.props.backgroundColor}
+            stageStatus={this.props.stageStatus}
+            stageButton={this.props.stageButton}
+            onClick={this.props.onClick}
           >
             <ModalBoxInner />
           </ModalContainer>
         </div>
 
-        <ToolTip tip='Lets, try again. You have more chances.' />
+        <ToolTip tip={this.props.tip} />
       </ReactModal>
     );
   }
