@@ -1,9 +1,14 @@
 import * as React from "react";
+import "../../styles/cancelbutton.scss";
 
-const CancelButton = () => {
+interface ICancelButton {
+  onClick: () => void;
+}
+
+const CancelButton = (props: ICancelButton) => {
   return (
-    <div className='cancel-button-container'>
-      <div className='cancel-text'>X</div>
+    <div onClick={props.onClick} className='cancel-button-container'>
+      X
     </div>
   );
 };

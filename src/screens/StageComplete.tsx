@@ -1,7 +1,13 @@
 import * as React from "react";
 import "../styles/stagecomplete.scss";
 //import LoadingScreen from "./LoadingScreen";
-import { Modal } from "../components/common";
+import {
+  Modal,
+  ModalContainer,
+  ModalBoxInner,
+  ToolTip,
+  CancelButton
+} from "../components/common";
 import { IStageCompleteState } from "../interfaces/StageComplete";
 
 class StageComplete extends React.Component<{}, IStageCompleteState> {
@@ -9,19 +15,27 @@ class StageComplete extends React.Component<{}, IStageCompleteState> {
   //   // new Game();
   //   gameInit();
   // }
+
   state = { showModal: true };
 
   render() {
     return (
       <div /*className='stage-complete'*/>
-        <Modal
-          isOpen={this.state.showModal}
-          backgroundColor='rgb(28,183,150)'
-          stageStatus='Stage Failed'
-          stageButton='Try Again'
-          tip='Lets, try again. You have more chances.'
-          onClick={() => alert("under dev")}
-        />
+        <Modal isOpen={this.state.showModal}>
+          <CancelButton onClick={() => alert("under dev")} />
+          <div className='modal-align-center'>
+            <ModalContainer
+              onClick={() => alert("dev")}
+              backgroundColor='rgb(28,183,150)'
+              stageStatus='Stage Failed'
+              stageButton='Try Again'
+            >
+              <ModalBoxInner />
+            </ModalContainer>
+          </div>
+
+          <ToolTip tip='Lets, try again. You have more chances.' />
+        </Modal>
         {/* <LoadingScreen /> */}
       </div>
     );

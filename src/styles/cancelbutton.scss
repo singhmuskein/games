@@ -1,0 +1,16 @@
+@import "./common";
+
+.cancel-button-container {
+  margin: 15px;
+  width: 8%;
+  height: 3%;
+  padding: 3px;
+  display: flex;
+  background: rgb(239, 76, 46);
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  color: white;
+  font-family: $fontFamily;
+  border-radius: 10%;
+  font-size: x-large;
+}
