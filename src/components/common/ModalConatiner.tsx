@@ -1,11 +1,23 @@
 import * as React from "react";
 import { ScoreText } from "../common/ScoreText";
-import "../../styles/modalcontainer.scss";
-import { IModalContainer } from "../../interfaces/ModalContainer";
+import "../../styles/modalcontainer.css";
 
+//type declaration
+interface IModalContainer {
+  children: React.ReactNode;
+  stageStatus: string;
+  stageButton: string;
+  backgroundColor: string;
+  onClick: () => void;
+  color: string;
+  text: string;
+  score: number;
+}
+
+// This is a Main modal Container, that holds all other sub components
 const ModalContainer = (props: IModalContainer) => {
   return (
-    <div className='container'>
+    <div className='container yellow-box-shadow'>
       <div className='sub-container'>
         <div
           style={{ backgroundColor: props.backgroundColor }}
@@ -13,7 +25,7 @@ const ModalContainer = (props: IModalContainer) => {
         >
           {props.stageStatus}
         </div>
-        <ScoreText color={"#c9a881"} text='Your Score' score={100} />
+        <ScoreText color={props.color} text={props.text} score={props.score} />
         {props.children}
       </div>
 

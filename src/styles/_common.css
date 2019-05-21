@@ -1,0 +1,81 @@
+.bg-floral-white-color {
+  background-color: #fffcf6;
+}
+
+.bg-deep-sky-blue-color {
+  background-color: #03c4f9;
+}
+
+.bg-cinnabar-color {
+  background-color: #f24b22;
+}
+
+.bg-black-color {
+  background-color: black;
+}
+
+.bg-alice-blue-color {
+  background-color: aliceblue;
+}
+
+.bg-prussian-blue-color {
+  background-color: #04254c;
+}
+
+.bg-sands-stone-color {
+  background-color: #6f6963;
+}
+
+.bg-selective-yellow-color {
+  background-color: #fab600;
+}
+
+.bg-tundora-color {
+  background-color: #595552;
+}
+
+.bg-oasis-color {
+  background-color: #fef0cc;
+}
+
+.nunito-font-bold {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.nunito-font-regular {
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+.font-color-white {
+  color: white;
+}
+
+.font-color-early-dawn {
+  color: #fff4da;
+}
+
+.font-color-taupe {
+  color: #3e3b37;
+}
+
+.font-color-saddle-brown {
+  color: #8a4e1b;
+}
+
+.font-color-oasis {
+  color: #fef0cc;
+}
+
+.display-content-and-items-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.yellow-box-shadow {
+  -webkit-box-shadow: 0px 2px 0px 0px #bc8900; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 0px 2px 0px 0px #bc8900; /* Firefox 3.5 - 3.6 */
+  box-shadow: 0px 2px 0px 0px #bc8900; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}

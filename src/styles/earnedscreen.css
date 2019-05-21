@@ -1,31 +1,29 @@
-@import "./common";
-
 .hurray-img-container {
-  display: $displayFlex;
-  justify-content: $justifyContent;
-  align-items: $alignItems;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 30%;
   flex-direction: column;
 }
 
 .earned-text {
   color: rgb(114, 125, 127);
-  font-family: $fontFamily;
+  font-family: monospace;
   margin-bottom: 2%;
 }
 
 .retry-game-text {
   color: #ddaf28;
-  font-family: $fontFamily;
+  font-family: monospace;
   font-size: 18px;
   margin-top: 40%;
-  text-align: $textAlign;
+  text-align: center;
 }
 
 .one-more-chance-text {
   color: white;
-  font-family: $fontFamily;
+  font-family: monospace;
   font-size: 19px;
-  text-align: $textAlign;
+  text-align: center;
   margin: 0% 10% 0% 10%;
 }

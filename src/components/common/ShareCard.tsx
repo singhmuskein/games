@@ -1,7 +1,14 @@
 import * as React from "react";
-import "../../styles/sharecard.scss";
-import { IShareCard } from "../../interfaces/ShareCard";
+import "../../styles/sharecard.css";
 
+//type declaration
+interface IShareCard {
+  text: string;
+  src: string;
+  onClick: () => void;
+}
+
+//This is card that can hold image, text and forward arrow
 const ShareCard = (props: IShareCard) => {
   return (
     <div className='share-card-container'>

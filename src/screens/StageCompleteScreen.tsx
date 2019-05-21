@@ -1,6 +1,5 @@
 import * as React from "react";
-import "../styles/stagecomplete.scss";
-//import LoadingScreen from "./LoadingScreen";
+import "../styles/stagecomplete.css";
 import {
   Modal,
   ModalContainer,
@@ -8,9 +7,17 @@ import {
   ToolTip,
   CancelButton
 } from "../components/common";
-import { IStageCompleteState } from "../interfaces/StageComplete";
+import "../styles/_common.css";
 
-class StageComplete extends React.Component<{}, IStageCompleteState> {
+//type declaration
+interface IStageCompleteState {
+  showModal: boolean;
+}
+
+export default class StageComplete extends React.Component<
+  {},
+  IStageCompleteState
+> {
   // componentDidMount() {
   //   // new Game();
   //   gameInit();
@@ -25,12 +32,15 @@ class StageComplete extends React.Component<{}, IStageCompleteState> {
           <CancelButton onClick={() => alert("under dev")} />
           <div className='modal-align-center'>
             <ModalContainer
+              color={"#c9a881"}
+              text='Your Score'
+              score={100}
               onClick={() => alert("dev")}
               backgroundColor='rgb(28,183,150)'
               stageStatus='Stage Failed'
               stageButton='Try Again'
             >
-              <ModalBoxInner />
+              <ModalBoxInner color={"#c9a881"} text='Best Score' score={100} />
             </ModalContainer>
           </div>
 
@@ -41,5 +51,3 @@ class StageComplete extends React.Component<{}, IStageCompleteState> {
     );
   }
 }
-
-export default StageComplete;

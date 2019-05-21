@@ -1,9 +1,9 @@
 import * as React from "react";
 import { Modal, CancelButton, ShareCard } from "../components/common";
-import "../styles/sharescreen.scss";
+import "../styles/sharescreen.css";
 import { ASSETS } from "../assets/AssetPath";
 
-class ShareScreen extends React.Component<{}, {}> {
+export default class ShareScreen extends React.Component<{}, {}> {
   state = { showModal: true };
 
   render() {
@@ -32,5 +32,3 @@ class ShareScreen extends React.Component<{}, {}> {
     );
   }
 }
-
-export default ShareScreen;

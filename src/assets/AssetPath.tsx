@@ -1,7 +1,20 @@
+const IMAGE_HOST = {
+  HOST: "https://rukminim1.flixcart.com/",
+  VARIABLE: "www/200/200/promos/",
+  DATE: "27/09/2018/",
+  IMAGE_EXTENSION_PNG: ".png",
+  IMAGE_QUALITY: "q=90"
+};
+
+const IMAGE_BASE = `${IMAGE_HOST.HOST}${IMAGE_HOST.VARIABLE}${IMAGE_HOST.DATE}`;
+const IMAGE_EXTENSION_AND_QUALITY = `${IMAGE_HOST.IMAGE_EXTENSION_PNG}?${
+  IMAGE_HOST.IMAGE_QUALITY
+}`;
 export const ASSETS = {
+  //SNAKE
   SNAKE: require("../assets/images/snake.png"),
-  HURRAY_EARNED:
-    "https://rukminim1.flixcart.com/www/200/200/promos/27/09/2018/3f148356-ef82-40cd-a772-2d87df790058.png?q=90", // need to refactor 
-  FLIPKART_HOME:
-    "https://rukminim1.flixcart.com/www/200/200/promos/21/09/2018/ff278c1b-db1c-4f50-a2b9-d0c39cd1434a.png?q=90" // need to refactor
+  //HUURAY_EARNED
+  HURRAY_EARNED: `${IMAGE_BASE}3f148356-ef82-40cd-a772-2d87df790058${IMAGE_EXTENSION_AND_QUALITY}`,
+  //FLIPKART_HOME
+  FLIPKART_HOME: `${IMAGE_BASE}ff278c1b-db1c-4f50-a2b9-d0c39cd1434a${IMAGE_EXTENSION_AND_QUALITY}`
 };

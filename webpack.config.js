@@ -1,6 +1,5 @@
 const webpack = require("webpack");
 const path = require("path");
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const DEV = process.env.NODE_ENV !== "production";
 
 module.exports = {
@@ -14,19 +13,18 @@ module.exports = {
     new webpack.DefinePlugin({
       PLATFORM: JSON.stringify("web"),
       "process.env.NODE_ENV": JSON.stringify("development")
-    }),
-    new ExtractTextPlugin("style.css")
+    })
   ],
   module: {
     loaders: [
       {
         test: /\.tsx$/,
-        loader: "awesome-typescript-loader" //typescript compiler
+        loader: "awesome-typescript-loader" //typescript loader
       },
       {
         enforce: "pre",
         test: /\.js$/,
-        loader: "source-map-loader" //debugging purpose for tsx files
+        loader: "source-map-loader"
       },
       {
         test: /\.(js|jsx)$/,
@@ -41,21 +39,15 @@ module.exports = {
         }
       },
       {
-        test: /\.scss$/,
+        test: /\.css$/,
         use: [
-          {
-            loader: "style-loader" // creates style nodes from JS strings
-          },
-          {
-            loader: "css-loader" // translates CSS into CommonJS
-          },
-          {
-            loader: "sass-loader" // compiles Sass to CSS
-          }
+          "style-loader",
+          { loader: "css-loader", options: { importLoaders: 1 } },
+          "postcss-loader"
         ]
       },
       {
-        test: /\.(png|jpe?g|svg)$/,
+        test: /\.(png|jpe?g|svg|ttf|woff2|woff)$/,
         loader: "file-loader",
         options: {
           name: "assets/[name].[ext]"

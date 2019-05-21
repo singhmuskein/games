@@ -1,9 +1,9 @@
 import * as React from "react";
 import { Modal, CancelButton } from "../components/common";
 import { ASSETS } from "../assets/AssetPath";
-import "../styles/earnedscreen.scss";
+import "../styles/earnedscreen.css";
 
-class EarnedScreen extends React.Component<{}, {}> {
+export default class EarnedScreen extends React.Component<{}, {}> {
   state = { showModal: true };
 
   render() {
@@ -28,5 +28,3 @@ class EarnedScreen extends React.Component<{}, {}> {
     );
   }
 }
-
-export default EarnedScreen;

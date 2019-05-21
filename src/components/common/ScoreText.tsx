@@ -1,7 +1,14 @@
 import * as React from "react";
-import "../../styles/scoretext.scss";
-import { IScoreText } from "../../interfaces/ScoreText";
+import "../../styles/scoretext.css";
 
+//type declaration
+interface IScoreText{
+  text: string,
+  score: number,
+  color: string
+}
+
+//This holds a text and score in columns
 const ScoreText = (props: IScoreText) => {
   return (
     <div className='score-text'>

@@ -1,5 +1,6 @@
 import * as React from "react";
-import "../../styles/cancelbutton.scss";
+import "../../styles/cancelbutton.css";
+import "../../styles/_common.css";
 
 interface ICancelButton {
   onClick: () => void;
@@ -7,7 +8,10 @@ interface ICancelButton {
 
 const CancelButton = (props: ICancelButton) => {
   return (
-    <div onClick={props.onClick} className='cancel-button-container'>
+    <div
+      onClick={props.onClick}
+      className='cancel-button-container nunito-font-regular'
+    >
       X
     </div>
   );

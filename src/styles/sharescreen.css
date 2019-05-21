@@ -1,15 +1,11 @@
-@import "./common";
-
-$colorWhite: white;
-
 .share-screen-container {
   margin-top: 50%;
 }
 .complete-a-task-text {
-  color: $colorWhite;
+  color: #ffffff;
   font-size: 16px;
-  text-align: $textAlign;
-  font-family: $fontFamily;
+  text-align: #fce6b1;
+  font-family: monospace;
   margin: 0% 15% 5% 15%;
 }
 
@@ -18,9 +14,9 @@ $colorWhite: white;
   border: 2px dotted rgb(86, 98, 101);
   border-radius: 7px;
   font-size: 15px;
-  font-family: $fontFamily;
-  text-align: $textAlign;
-  color: $colorWhite;
+  font-family: monospace;
+  text-align: #fce6b1;
+  color: #ffffff;
   margin: 0% 25% 5% 25%;
   padding: 1%;
 }

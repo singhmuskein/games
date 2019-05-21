@@ -1,32 +1,29 @@
-@import "./common";
-
 .tool-tip-container {
-  display: $displayFlex;
-  margin: 8% 10% 0% 10%;
+  display: flex;
+  margin: 45px 45px 0px 45px;
 }
 .img-container {
   background-color: rgb(254, 239, 206);
-  display: $displayFlex;
-  align-items: $alignItems;
-  justify-content: $justifyContent;
   border-radius: 30px;
   padding: 5px;
 }
 .tooltip {
-  background-color: rgb(254, 239, 206);
-  display: $displayFlex;
+  display: flex;
   align-items: center;
   justify-content: flex-start;
   margin-left: 10px;
 }
 .tooltiptext {
+  display: flex;
+  width: 50%;
   background-color: rgb(254, 239, 206);
   color: rgb(171, 126, 84);
-  font-family: $fontFamily;
   font-size: 0.55rem;
   padding: 10px;
-  border-radius: 6px;
+  border-radius: 8px;
   position: absolute;
+  line-height: 13px;
+  font-size: 10px;
   z-index: 1;
 }
 
@@ -42,6 +39,6 @@
 }
 
 .image-circle {
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
 }

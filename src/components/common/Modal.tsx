@@ -1,34 +1,28 @@
 import * as React from "react";
 import * as ReactModal from "react-modal";
-import "../../styles/modal.scss";
-import { IModal } from "../../interfaces/Modal";
+import "../../styles/modal.css";
 
 ReactModal.setAppElement("#root");
 
+//type declaration
+interface IModal {
+  isOpen: boolean;
+  children: React.ReactNode;
+}
+
+//This is the modal that overlays on top of any underlying screen.
 const Modal = (props: IModal) => {
   return (
     <div>
-      <ReactModal style={customStyles} isOpen={props.isOpen}>
+      <ReactModal
+        className='modal'
+        overlayClassName='modal-overlay'
+        isOpen={props.isOpen}
+      >
         {props.children}
       </ReactModal>
     </div>
   );
-};
-
-const customStyles = {
-  content: {
-    position: "absolute",
-    top: "0px",
-    left: "0px",
-    right: "10px",
-    bottom: "0px",
-    borderWidth: "0px",
-    backgroundColor: "rgb(15,34,38)",
-    borderRadius: "0px",
-    padding: "0px",
-    width: "100%",
-    height: "100%"
-  }
 };
 
 export { Modal };

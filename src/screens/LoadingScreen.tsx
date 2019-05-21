@@ -1,5 +1,5 @@
 import * as React from "react";
-import "../styles/loadingscreen.scss";
+import "../styles/loadingscreen.css";
 
 class LoadingScreen extends React.Component {
   render() {

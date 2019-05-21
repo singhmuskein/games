@@ -1,0 +1,20 @@
+.modal-align-center {
+  margin-top: 30%;
+}
+
+.modal {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: linear-gradient(#1f1d1d, #1f1d1d);
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
