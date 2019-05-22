@@ -14,6 +14,10 @@
   background-color: black;
 }
 
+.bg-white-color {
+  background-color: white;
+}
+
 .bg-alice-blue-color {
   background-color: aliceblue;
 }
@@ -68,10 +72,22 @@
   color: #fef0cc;
 }
 
+.font-color-black {
+  color: black;
+}
+
+.font-color-alice-blue {
+  color: aliceblue;
+}
+
 .display-content-and-items-center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.text-align-center {
+  text-align: center;
 }
 
 .yellow-box-shadow {

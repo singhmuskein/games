@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Modal, CancelButton, ShareCard } from "../components/common";
+import { Modal, ShareCard } from "../components/common";
 import "../styles/sharescreen.css";
 import { ASSETS } from "../assets/AssetPath";
 
@@ -8,14 +8,20 @@ export default class ShareScreen extends React.Component<{}, {}> {
 
   render() {
     return (
-      <Modal isOpen={this.state.showModal}>
-        <CancelButton onClick={() => alert("under dev")} />
+      <Modal
+        cancelButton={true}
+        cancelButtonBackgroundColor='#ef4c2e'
+        cancelButtonClick={() => alert("dev")}
+        isOpen={this.state.showModal}
+      >
         <div className='share-screen-container'>
-          <div className='complete-a-task-text'>
+          <div className='complete-a-task-text text-align-center font-color-white nunito-font-regular'>
             complete a task to earn an extra chances
           </div>
 
-          <div className='chances-claimed-container'>0/2 chances claimed</div>
+          <div className='chances-claimed-container font-color-white nunito-font-regular'>
+            0/2 chances claimed
+          </div>
 
           <ShareCard
             onClick={() => alert("dev")}

@@ -1,15 +1,19 @@
 import * as React from "react";
-//import ShareScreen from "./screens/ShareScreen";
-import StageCompleteScreen from "./screens/StageCompleteScreen";
+import WellPlayedScreen from "./screens/WellPlayedScreen";
+//import LoadingScreen from "./screens/LoadingScreen";
+// import ShareScreen from "./screens/ShareScreen";
+//import StageCompleteScreen from "./screens/StageCompleteScreen";
 //import EarnedScreen from "./screens/EarnedScreen";
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <StageCompleteScreen />
+        {/* <StageCompleteScreen /> */}
         {/* <EarnedScreen /> */}
         {/* <ShareScreen /> */}
+        {/* <LoadingScreen /> */}
+        <WellPlayedScreen />
       </div>
     );
   }

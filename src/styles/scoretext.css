@@ -1,15 +1,14 @@
 .score-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .score-text-string {
-  font-family: sans-serif;
   font-size: 14px;
-  text-align: #fce6b1;
-  font-weight: bold;
+  opacity: 0.5;
 }
 .score-text-number {
-  font-family: sans-serif;
   font-size: 29px;
-  text-align: #fce6b1;
-  font-weight: bold;
 }

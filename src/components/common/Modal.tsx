@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as ReactModal from "react-modal";
 import "../../styles/modal.css";
+import { CancelButton } from "./CancelButton";
 
 ReactModal.setAppElement("#root");
 
@@ -8,7 +9,23 @@ ReactModal.setAppElement("#root");
 interface IModal {
   isOpen: boolean;
   children: React.ReactNode;
+  cancelButtonClick: () => void;
+  cancelButton?: any;
+  cancelButtonBackgroundColor?: any;
 }
+
+//This is Optional, but responsible to render tha cancel Button [X] on modal
+const renderCancelButton = (props: IModal) => {
+  if (props.cancelButton) {
+    return (
+      <CancelButton
+        backgroundColor={props.cancelButtonBackgroundColor}
+        onClick={props.cancelButtonClick}
+      />
+    );
+  }
+  return null;
+};
 
 //This is the modal that overlays on top of any underlying screen.
 const Modal = (props: IModal) => {
@@ -19,6 +36,7 @@ const Modal = (props: IModal) => {
         overlayClassName='modal-overlay'
         isOpen={props.isOpen}
       >
+        {renderCancelButton(props)}
         {props.children}
       </ReactModal>
     </div>
@@ -26,3 +44,11 @@ const Modal = (props: IModal) => {
 };
 
 export { Modal };
+
+/* 
+Props available out of this component
+  isOpen
+  children
+  cancelButtonClick
+  cancelButton(optional)
+*/

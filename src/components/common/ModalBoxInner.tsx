@@ -4,7 +4,8 @@ import { ScoreText } from "./ScoreText";
 
 //type declaration
 interface IModalBoxInner {
-  color: string;
+  textColor: string;
+  numberColor: string;
   text: string;
   score: number;
 }
@@ -12,10 +13,23 @@ interface IModalBoxInner {
 // This is container, that holds score text for best score
 const ModalBoxInner = (props: IModalBoxInner) => {
   return (
-    <div className='modal-box-inner'>
-      <ScoreText color={props.color} text={props.text} score={props.score} />
+    <div className='modal-box-inner bg-oasis-color'>
+      <ScoreText
+        textColor={props.textColor}
+        numberColor={props.numberColor}
+        text={props.text}
+        score={props.score}
+      />
     </div>
   );
 };
 
 export { ModalBoxInner };
+
+/* 
+props available out of this props
+  textColor
+  numberColor
+  text
+  score
+*/

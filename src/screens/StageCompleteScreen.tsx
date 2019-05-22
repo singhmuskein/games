@@ -4,8 +4,7 @@ import {
   Modal,
   ModalContainer,
   ModalBoxInner,
-  ToolTip,
-  CancelButton
+  ToolTip
 } from "../components/common";
 import "../styles/_common.css";
 
@@ -28,11 +27,18 @@ export default class StageComplete extends React.Component<
   render() {
     return (
       <div /*className='stage-complete'*/>
-        <Modal isOpen={this.state.showModal}>
-          <CancelButton onClick={() => alert("under dev")} />
+        <Modal
+          cancelButton={true}
+          cancelButtonBackgroundColor='#ef4c2e'
+          cancelButtonClick={() => alert("dev")}
+          isOpen={this.state.showModal}
+        >
           <div className='modal-align-center'>
             <ModalContainer
-              color={"#c9a881"}
+              //wantToPlayAgain={true}
+              ribbonTextColor='white'
+              textColor={"#c9a881"}
+              numberColor={"#c9a881"}
               text='Your Score'
               score={100}
               onClick={() => alert("dev")}
@@ -40,11 +46,15 @@ export default class StageComplete extends React.Component<
               stageStatus='Stage Failed'
               stageButton='Try Again'
             >
-              <ModalBoxInner color={"#c9a881"} text='Best Score' score={100} />
+              <ModalBoxInner
+                numberColor={"#c9a881"}
+                textColor={"#c9a881"}
+                text='Best Score'
+                score={100}
+              />
             </ModalContainer>
+            <ToolTip tip='Lets, try again. You have more chances.' />
           </div>
-
-          <ToolTip tip='Lets, try again. You have more chances.' />
         </Modal>
         {/* <LoadingScreen /> */}
       </div>

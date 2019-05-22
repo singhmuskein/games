@@ -5,3 +5,5 @@ export * from "./ModalConatiner";
 export * from "./ModalBoxInner";
 export * from "./ScoreText";
 export * from "./ShareCard";
+export * from "./YellowButton";
+export * from "./EarlyDawnText";

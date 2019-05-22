@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Modal, CancelButton } from "../components/common";
+import { Modal } from "../components/common";
 import { ASSETS } from "../assets/AssetPath";
 import "../styles/earnedscreen.css";
 
@@ -8,8 +8,12 @@ export default class EarnedScreen extends React.Component<{}, {}> {
 
   render() {
     return (
-      <Modal isOpen={this.state.showModal}>
-        <CancelButton onClick={() => alert("under dev")} />
+      <Modal
+        cancelButton={true}
+        cancelButtonBackgroundColor='#ef4c2e'
+        cancelButtonClick={() => alert("dev")}
+        isOpen={this.state.showModal}
+      >
         <div className='hurray-img-container'>
           <img alt='hurray' src={ASSETS.HURRAY_EARNED} />
 
