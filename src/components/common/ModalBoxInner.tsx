@@ -1,6 +1,7 @@
 import * as React from "react";
 import "../../styles/modalboxinner.css";
 import { ScoreText } from "./ScoreText";
+import { ASSETS } from "../../assets/AssetPath";
 
 //type declaration
 interface IModalBoxInner {
@@ -14,6 +15,7 @@ interface IModalBoxInner {
 const ModalBoxInner = (props: IModalBoxInner) => {
   return (
     <div className='modal-box-inner bg-oasis-color'>
+      <img className='crown-img-container' src={ASSETS.CROWN} />
       <ScoreText
         textColor={props.textColor}
         numberColor={props.numberColor}

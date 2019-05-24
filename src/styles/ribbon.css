@@ -1,0 +1,21 @@
+.ribbon-img-grey {
+  display: flex;
+  height: 50px;
+  width: 250px;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  color: #e7e0e0;
+  font-size: 20px;
+}
+
+.ribbon-img-green {
+  display: flex;
+  height: 43px;
+  width: 258px;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  color: #e7e0e0;
+  font-size: 20px;
+}

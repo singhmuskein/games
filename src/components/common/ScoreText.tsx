@@ -3,10 +3,10 @@ import "../../styles/scoretext.css";
 
 //type declaration
 interface IScoreText {
-  text: string;
-  score: number;
-  textColor: string;
-  numberColor: string;
+  textColor?: string;
+  numberColor?: string;
+  text?: string;
+  score?: number;
 }
 
 //This holds a text and score in columns

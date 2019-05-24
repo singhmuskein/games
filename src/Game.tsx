@@ -1,6 +1,6 @@
 import * as Phaser from "phaser";
 const screenWidth = window.innerWidth;
-const screenHeight = window.innerHeight;
+const screenHeight = 200;
 import { makeSnake } from "./Snake";
 import { makeBlock } from "./Block";
 import { Input } from "phaser";

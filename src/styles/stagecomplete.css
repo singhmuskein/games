@@ -1,4 +1,6 @@
-.stage-complete {
-}
-.tooltip-align {
+.next-level-starts-text {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 10px;
 }

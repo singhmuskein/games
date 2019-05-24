@@ -1,5 +1,6 @@
 import * as React from "react";
 import "../styles/wellplayedscreen.css";
+import "../styles/goodjobscreen.css";
 import {
   Modal,
   ModalContainer,
@@ -10,14 +11,11 @@ import {
 import "../styles/_common.css";
 
 //type declaration
-interface IWellPlayedState {
+interface IGoodJobState {
   showModal: boolean;
 }
 
-export default class WellPlayedScreen extends React.Component<
-  {},
-  IWellPlayedState
-> {
+export default class GoodJobScreen extends React.Component<{}, IGoodJobState> {
   state = { showModal: true };
 
   render() {
@@ -31,23 +29,18 @@ export default class WellPlayedScreen extends React.Component<
         >
           <div className='modal-align-center'>
             <ModalContainer
-              //wantToPlayAgain={true}
-              //yellowBlockButton={true}
-
-              textColor={"#3e3b37"}
-              numberColor={"#3e3b37"}
-              text='Your Score'
-              score={100}
               onClick={() => alert("dev")}
-              stageStatus='Well Played'
-              //stageButton='Try Again'
+              stageStatus='Good Job'
             >
               <ModalBoxInner
                 numberColor={"#8a4e1b"}
                 textColor={"#8a4e1b"}
                 text='Best Score'
-                score={100}
+                score={2300}
               />
+              <div className='come-back-tommorrow-text nunito-font-regular'>
+                Come back tomorrow for a new adventure!
+              </div>
             </ModalContainer>
             <div className='yellow-button-row-container'>
               <YellowButton color='#a06e3e' text='SHARE' />

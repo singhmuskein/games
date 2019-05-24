@@ -1,28 +1,30 @@
 import * as React from "react";
 import { ScoreText } from "../common/ScoreText";
 import "../../styles/modalcontainer.css";
+import { RibbonGrey } from "./RibbonGrey";
+import { RibbonGreen } from "./RibbonGreen";
 
 //type declaration
 interface IModalContainer {
-  children: React.ReactNode;
+  children: any;
   stageStatus: string;
   stageButton?: string;
-  backgroundColor: string;
   onClick: () => void;
-  textColor: string;
-  numberColor: string;
-  text: string;
-  score: number;
+  textColor?: string;
+  numberColor?: string;
+  text?: string;
+  score?: number;
   wantToPlayAgain?: any;
-  ribbonTextColor: string;
   yellowBlockButton?: any;
+  greyRibbon?: boolean;
+  greenRibbon?: boolean;
 }
 
 //This is Optional, but responsible to render Want to play again text
 const renderWantToPlayAgainText = (wantToPlayAgain: boolean) => {
   if (wantToPlayAgain) {
     return (
-      <div className='want-to-play-again-text font-color-saddle-brown '>
+      <div className='want-to-play-again-text nunito-font-regular font-color-saddle-brown '>
         Want to Play Again?
       </div>
     );
@@ -47,12 +49,25 @@ const renderYellowBlockButton = (
   return null;
 };
 
+//render ribbon grey/green ribbon based on boolean condition
+const renderRibbonColor = (props: IModalContainer) => {
+  const { greyRibbon, greenRibbon, stageStatus } = props;
+  if (greyRibbon && greenRibbon) {
+    return <RibbonGrey stageStatus={stageStatus} />;
+  } else if (greyRibbon) {
+    return <RibbonGrey stageStatus={stageStatus} />;
+  } else if (props.greenRibbon) {
+    return <RibbonGreen stageStatus={stageStatus} />;
+  }
+  return null;
+};
+
 // This is a Main modal Container, that holds all other sub components
 const ModalContainer = (props: IModalContainer) => {
   return (
     <div className='container yellow-box-shadow'>
       <div className='sub-container'>
-        <div
+        {/* <div
           style={{
             backgroundColor: props.backgroundColor,
             color: props.ribbonTextColor
@@ -60,7 +75,8 @@ const ModalContainer = (props: IModalContainer) => {
           className='overlay-ribbon nunito-font-regular'
         >
           {props.stageStatus}
-        </div>
+        </div> */}
+        <div className='align-ribbon'>{renderRibbonColor(props)}</div>
         <ScoreText
           numberColor={props.numberColor}
           textColor={props.textColor}
@@ -82,13 +98,11 @@ Props available out of this component
   children
   stageStatus
   stageButton
-  backgroundColor
   onClick
   textColor
   numberColor
   text
   score
-  ribbonTextColor
   yellowBlockButton(optional)
   wantToPlayAgain(optional)
 */

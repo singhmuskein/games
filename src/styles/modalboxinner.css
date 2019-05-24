@@ -3,8 +3,12 @@
   border-radius: 5px;
   border: solid #fab600;
   border-width: 1px;
-  padding: 8px;
-  margin-bottom: 20px;
   margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
+}
+
+.crown-img-container {
+  position: relative;
+  top: -12px;
 }

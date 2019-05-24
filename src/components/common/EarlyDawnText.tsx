@@ -3,9 +3,9 @@ import "../../styles/earlydawntext.css";
 
 //type declaration
 interface IEarlyDawnText {
-  fontSize: string | number;
-  text: string;
-  className: string;
+  fontSize?: string | number;
+  text?: string;
+  className?: string;
 }
 
 const EarlyDawnText = (props: IEarlyDawnText) => {

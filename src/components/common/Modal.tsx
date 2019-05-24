@@ -8,8 +8,8 @@ ReactModal.setAppElement("#root");
 //type declaration
 interface IModal {
   isOpen: boolean;
-  children: React.ReactNode;
-  cancelButtonClick: () => void;
+  children: any;
+  cancelButtonClick?: () => void;
   cancelButton?: any;
   cancelButtonBackgroundColor?: any;
 }
@@ -18,10 +18,12 @@ interface IModal {
 const renderCancelButton = (props: IModal) => {
   if (props.cancelButton) {
     return (
-      <CancelButton
-        backgroundColor={props.cancelButtonBackgroundColor}
-        onClick={props.cancelButtonClick}
-      />
+      <div className='cancel-button-align'>
+        <CancelButton
+          backgroundColor={props.cancelButtonBackgroundColor}
+          onClick={props.cancelButtonClick}
+        />
+      </div>
     );
   }
   return null;

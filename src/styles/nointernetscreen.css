@@ -1,0 +1,25 @@
+.no-internet-img-container {
+  position: relative;
+  top: -30px;
+  background-color: #f24b22;
+  width: 90px;
+  height: 55px;
+  border-radius: 7px;
+}
+
+.align-no-internet-container-center {
+  position: relative;
+  top: 35%;
+}
+.looks-like-no-internet-text {
+  font-size: 18px;
+  margin-top: 10px;
+}
+.not-connected-to-internet-text {
+  font-size: 30px;
+}
+.align-not-connected-to-inernet-and-looks-like-no-internet-texts {
+  position: relative;
+  bottom: 10px;
+  margin: 0px 45px;
+}

@@ -3,7 +3,7 @@ import "../../styles/cancelbutton.css";
 import "../../styles/_common.css";
 
 interface ICancelButton {
-  onClick: () => void;
+  onClick?: () => void;
   backgroundColor: string;
 }
 

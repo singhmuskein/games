@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="258px" height="43px" viewBox="0 0 258 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 54.1 (76490) - https://sketchapp.com -->
+    <title>D53F1B8B-52EF-41AF-BA39-9B7955DC0292</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M3.55530211,2 L20.0965337,2 C24.5148117,2 28.0965337,5.581722 28.0965337,10 L28.0965337,34.0000012 C28.0965337,38.4182792 24.5148117,42.0000012 20.0965337,42.0000012 L3.55530455,42.0000023 C1.89844971,42.0000023 0.555303483,40.656856 0.555303483,39.0000012 C0.555303483,38.4439491 0.709844815,37.8988385 1.00167555,37.4255218 C5.73158102,29.7541456 8.09653375,24.6123052 8.09653375,22.0000006 C8.09653375,19.3876957 5.73158051,14.2458545 1.00167404,6.57447694 C0.132115575,5.164147 0.570495321,3.31593176 1.98082425,2.44637165 C2.45414052,2.15454119 2.99925058,2 3.55530211,2 Z M254.63786,2 C255.193911,2 255.739021,2.15454119 256.212338,2.44637165 C257.622667,3.31593176 258.061046,5.164147 257.191488,6.57447694 C252.461581,14.2458545 250.096628,19.3876957 250.096628,22.0000006 C250.096628,24.6123045 252.46158,29.754143 257.191483,37.425516 C257.483315,37.8988345 257.637856,38.4439471 257.637856,39.0000012 C257.637856,40.6568623 256.294705,42.0000135 254.637844,42.0000135 L234.096628,42.0000012 C229.67835,42.0000012 226.096628,38.4182792 226.096628,34.0000012 L226.096628,10 C226.096628,5.581722 229.67835,2 234.096628,2 L254.63786,2 Z" id="path-1"></path>
+        <filter x="-0.1%" y="-1.2%" width="100.2%" height="105.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.549337636   0 0 0 0 0.447473703  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="12" y="0" width="234" height="40" rx="8"></rect>
+        <filter x="-0.2%" y="-1.2%" width="100.4%" height="105.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.592156863   0 0 0 0 0.482352941  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SnakeRush_8" transform="translate(-51.000000, -268.000000)">
+            <g id="Score-Card" transform="translate(45.000000, 268.000000)">
+                <g id="YourScore">
+                    <g id="Banner" transform="translate(5.903466, 0.000000)">
+                        <g id="Combined-Shape">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#009B7E" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <g id="Rectangle-Copy-4">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                            <use fill="#01B896" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

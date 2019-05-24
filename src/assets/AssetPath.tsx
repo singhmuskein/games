@@ -13,6 +13,10 @@ const IMAGE_EXTENSION_AND_QUALITY = `${IMAGE_HOST.IMAGE_EXTENSION_PNG}?${
 export const ASSETS = {
   //SNAKE
   SNAKE: require("../assets/images/snake.png"),
+  //RIBBON
+  RIBBONGREEN: require("../assets/images/banner.svg"),
+  RIBBONGREY: require("../assets/images/banner2.svg"),
+  CROWN: require("../assets/images/crown.svg"),
   //HUURAY_EARNED
   HURRAY_EARNED: `${IMAGE_BASE}27/09/2018/3f148356-ef82-40cd-a772-2d87df790058${IMAGE_EXTENSION_AND_QUALITY}`,
   //FLIPKART_HOME

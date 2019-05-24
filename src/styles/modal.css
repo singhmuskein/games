@@ -1,8 +1,6 @@
 .modal-align-center {
   position: relative;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 15%;
 }
 
 .modal {
@@ -11,7 +9,7 @@
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background-image: linear-gradient(#1f1d1d, #1f1d1d);
+  background-image: linear-gradient(#282828, #090909);
 }
 
 .modal-overlay {
@@ -20,4 +18,8 @@
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.cancel-button-align {
+  margin: 15px;
 }

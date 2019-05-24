@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  margin: 0px 45px 0px 45px;
+  margin: 0px 36px;
   flex-direction: column;
   background-color: #f8b52a;
   border-radius: 5px;
@@ -16,7 +16,7 @@
   border-radius: 5px;
 }
 
-.overlay-ribbon {
+/* .overlay-ribbon {
   width: 60%;
   margin-bottom: 18px;
   display: flex;
@@ -27,7 +27,7 @@
   padding: 10px;
   border-radius: 10px;
   margin-top: -23px;
-}
+} */
 
 .yellow-button-container {
   padding: 10px;

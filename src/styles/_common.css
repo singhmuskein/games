@@ -43,13 +43,18 @@
 }
 
 .nunito-font-bold {
-  font-family: sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: bold;
 }
 
 .nunito-font-regular {
-  font-family: sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 400;
+}
+
+.nunito-font-extra-bold {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
 }
 
 .font-color-white {
@@ -80,6 +85,10 @@
   color: aliceblue;
 }
 
+.font-color-suva-grey {
+  color: #8b8b8b;
+}
+
 .display-content-and-items-center {
   display: flex;
   justify-content: center;
@@ -94,4 +103,9 @@
   -webkit-box-shadow: 0px 2px 0px 0px #bc8900; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
   -moz-box-shadow: 0px 2px 0px 0px #bc8900; /* Firefox 3.5 - 3.6 */
   box-shadow: 0px 2px 0px 0px #bc8900; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.align-ribbon {
+  position: relative;
+  top: -30px;
 }
