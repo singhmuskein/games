@@ -1,29 +1,31 @@
 .hurray-img-container {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30%;
   flex-direction: column;
 }
 
 .earned-text {
   color: rgb(114, 125, 127);
-  font-family: monospace;
   margin-bottom: 2%;
 }
 
 .retry-game-text {
-  color: #ddaf28;
-  font-family: monospace;
+  position: relative;
+  display: flex;
+  top: 75px;
   font-size: 18px;
   margin-top: 58px;
-  text-align: center;
 }
 
 .one-more-chance-text {
   color: white;
-  font-family: monospace;
   font-size: 19px;
-  text-align: center;
   margin: 0% 10% 0% 10%;
+}
+
+.align-you-have-earned-and-one-more-chance-texts {
+  position: relative;
+  top: -24px;
 }

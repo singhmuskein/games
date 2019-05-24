@@ -9,3 +9,4 @@ export * from "./YellowButton";
 export * from "./EarlyDawnText";
 export * from "./RibbonGreen";
 export * from "./RibbonGrey";
+export * from "./LinearGradientModalContainer";

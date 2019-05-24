@@ -17,16 +17,21 @@ export default class EarnedScreen extends React.Component<{}, {}> {
         <div className='hurray-img-container'>
           <img alt='hurray' src={ASSETS.HURRAY_EARNED} />
 
-          <div className='earned-text'>You've earned</div>
-          <div className='one-more-chance-text'>
-            One more chance to play the game
+          <div className='align-you-have-earned-and-one-more-chance-texts'>
+            <div className='earned-text roboto-font-medium text-align-center'>
+              You've earned
+            </div>
+            <div className='one-more-chance-text roboto-font-medium text-align-center'>
+              One more chance to play the game
+            </div>
           </div>
-        </div>
-        <div
-          onClick={() => alert("retry game under dev")}
-          className='retry-game-text'
-        >
-          Retry Game
+
+          <div
+            onClick={() => alert("retry game under dev")}
+            className='retry-game-text font-color-selective-yellow roboto-font-regular'
+          >
+            Retry Game
+          </div>
         </div>
       </Modal>
     );

@@ -1,19 +1,17 @@
-.share-screen-container {
-  position: relative;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 .complete-a-task-text {
-  font-size: 18px;
-  margin: 0 30px 18px;
+  font-size: 22px;
+  margin: 0px 45px 18px;
 }
 
 .chances-claimed-container {
   border: 2px dotted #566265;
   border-radius: 7px;
   font-size: 15px;
-  text-align: center;
-  margin: 0px 100px 18px 100px;
-  padding: 3px;
+  margin: 0px 45px 18px;
+  padding: 6px;
+}
+
+.align-chances-claimed-text {
+  display: flex;
+  justify-content: center;
 }

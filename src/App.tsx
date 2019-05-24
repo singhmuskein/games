@@ -1,9 +1,9 @@
 import * as React from "react";
-//import GoodJobScreen from "./screens/GoodJobScreen";
-// import WellPlayedScreen from "./screens/WellPlayedScreen";
+// import GoodJobScreen from "./screens/GoodJobScreen";
+import WellPlayedScreen from "./screens/WellPlayedScreen";
 // import LoadingScreen from "./screens/LoadingScreen";
 // import ShareScreen from "./screens/ShareScreen";
-import LevelCompleteOrFailed from "./screens/LevelCompleteOrFailed";
+//import LevelCompleteOrFailed from "./screens/LevelCompleteOrFailed";
 // import NoInternetScreen from "./screens/NoInternetScreen";
 // import EarnedScreen from "./screens/EarnedScreen";
 
@@ -11,15 +11,15 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <LevelCompleteOrFailed
+        {/* <LevelCompleteOrFailed
           modalCancelButton={true}
           modalCancelButtonBackgroundColor={"#f24b22"}
           modalCancelButtonOnClick={() => alert("dev")}
           modalIsOpen={true}
           wantToPlayAgainTextVisible={true}
-          greyRibbonVisible={true}
+          greyRibbonVisible={false}
           yellowBlockButtonVisible={true}
-          greenRibbonVisible={false}
+          greenRibbonVisible={true}
           yourScoreTextColor={"#3e3b37"}
           YourScoreText={"Your Score"}
           yourScoreNumberColor={"black"}
@@ -38,11 +38,11 @@ class App extends React.Component {
           earlyDawnTextVisible={false}
           toolTipVisible={true}
           gameTip='Higher number blocks gives better score!'
-        />
+        /> */}
         {/* <EarnedScreen /> */}
         {/* <ShareScreen /> */}
         {/* <LoadingScreen /> */}
-        {/* <WellPlayedScreen /> */}
+        <WellPlayedScreen />
         {/* <GoodJobScreen /> */}
         {/* <NoInternetScreen /> */}
       </div>

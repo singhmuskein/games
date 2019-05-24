@@ -29,6 +29,7 @@ export default class GoodJobScreen extends React.Component<{}, IGoodJobState> {
         >
           <div className='modal-align-center'>
             <ModalContainer
+              greenRibbon={true}
               onClick={() => alert("dev")}
               stageStatus='Good Job'
             >

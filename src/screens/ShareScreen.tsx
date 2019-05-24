@@ -14,13 +14,15 @@ export default class ShareScreen extends React.Component<{}, {}> {
         cancelButtonClick={() => alert("dev")}
         isOpen={this.state.showModal}
       >
-        <div className='share-screen-container'>
-          <div className='complete-a-task-text text-align-center font-color-white nunito-font-regular'>
-            complete a task to earn an extra chances
+        <div>
+          <div className='complete-a-task-text text-align-center font-color-white roboto-font-regular'>
+            Complete a task to earn an extra chances
           </div>
 
-          <div className='chances-claimed-container font-color-white nunito-font-regular'>
-            0/2 chances claimed
+          <div className='align-chances-claimed-text'>
+            <div className='chances-claimed-container font-color-white roboto-font-regular'>
+              0/2 chances claimed
+            </div>
           </div>
 
           <ShareCard

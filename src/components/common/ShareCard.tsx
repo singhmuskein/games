@@ -17,10 +17,10 @@ const ShareCard = (props: IShareCard) => {
         className='home-image-container bg-white-color'
       >
         <img className='home-image' src={props.src} />
-        <div className='share-this-game-text font-color-black nunito-font-regular'>
+        <div className='share-this-game-text font-color-black roboto-font-regular'>
           {props.text}
         </div>
-        <div className='go-forward-arrow display-content-and-items-center nunito-font-regular'>
+        <div className='go-forward-arrow display-content-and-items-center roboto-font-regular'>
           >
         </div>
       </div>

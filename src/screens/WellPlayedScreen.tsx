@@ -1,11 +1,13 @@
 import * as React from "react";
 import "../styles/wellplayedscreen.css";
+import "../styles/goodjobscreen.css";
+import "../styles/lineargradientmodalcontainer.css";
 import {
   Modal,
-  ModalContainer,
   ModalBoxInner,
   YellowButton,
-  EarlyDawnText
+  EarlyDawnText,
+  LinearGradientModalContainer
 } from "../components/common";
 import "../styles/_common.css";
 
@@ -30,25 +32,21 @@ export default class WellPlayedScreen extends React.Component<
           isOpen={this.state.showModal}
         >
           <div className='modal-align-center'>
-            <ModalContainer
-              //wantToPlayAgain={true}
-              //yellowBlockButton={true}
-
-              textColor={"#3e3b37"}
-              numberColor={"#3e3b37"}
-              text='Your Score'
-              score={100}
+            <LinearGradientModalContainer
+              greenRibbon={true}
               onClick={() => alert("dev")}
-              stageStatus='Well Played'
-              //stageButton='Try Again'
+              stageStatus='Good Job'
             >
               <ModalBoxInner
                 numberColor={"#8a4e1b"}
                 textColor={"#8a4e1b"}
                 text='Best Score'
-                score={100}
+                score={2300}
               />
-            </ModalContainer>
+              <div className='come-back-tommorrow-text nunito-font-regular'>
+                Come back tomorrow for a new adventure!
+              </div>
+            </LinearGradientModalContainer>
             <div className='yellow-button-row-container'>
               <YellowButton color='#a06e3e' text='SHARE' />
               <YellowButton color='#a06e3e' text='LEADERBOARD' />

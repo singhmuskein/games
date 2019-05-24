@@ -1,10 +1,12 @@
 .modal-align-center {
-  position: relative;
-  top: 15%;
+  width: -webkit-fill-available;
 }
 
 .modal {
   position: absolute;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   top: 0px;
   left: 0px;
   right: 0px;
@@ -21,5 +23,7 @@
 }
 
 .cancel-button-align {
-  margin: 15px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }

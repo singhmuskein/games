@@ -1,0 +1,24 @@
+.linear-gradient-container {
+  background-image: repeating-linear-gradient(
+    60deg,
+    #fab600,
+    #be66cb 30px,
+    #03c4f9 0,
+    #abe967 60px
+  );
+  display: flex;
+  margin: 0px 36px;
+  flex-direction: column;
+  background-color: #f8b52a;
+  border-radius: 5px;
+}
+
+.linear-gradient-sub-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 252, 246);
+  margin: 7px;
+  border-radius: 5px;
+}
