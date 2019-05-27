@@ -15,17 +15,19 @@ interface IModalContainer {
   text?: string;
   score?: number;
   wantToPlayAgain?: any;
+  wantToPlayAgainText?: string;
   yellowBlockButton?: any;
   greyRibbon?: boolean;
   greenRibbon?: boolean;
 }
 
 //This is Optional, but responsible to render Want to play again text
-const renderWantToPlayAgainText = (wantToPlayAgain: boolean) => {
+const renderWantToPlayAgainText = (props: IModalContainer) => {
+  const { wantToPlayAgain, wantToPlayAgainText } = props;
   if (wantToPlayAgain) {
     return (
       <div className='want-to-play-again-text nunito-font-regular font-color-saddle-brown '>
-        Want to Play Again?
+        {wantToPlayAgainText}
       </div>
     );
   }
@@ -39,7 +41,7 @@ const renderYellowBlockButton = (
   if (yellowBlockButton) {
     return (
       <div onClick={props.onClick} className='yellow-button-container'>
-        {renderWantToPlayAgainText(props.wantToPlayAgain)}
+        {renderWantToPlayAgainText(props)}
         <div className='yellow-button-text nunito-font-regular'>
           {props.stageButton}
         </div>

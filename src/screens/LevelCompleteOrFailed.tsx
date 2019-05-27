@@ -22,6 +22,7 @@ interface ILevelCompleteOrFailed {
   modalCancelButtonOnClick: () => void;
   modalIsOpen: boolean;
   wantToPlayAgainTextVisible: boolean;
+  wantToPlayAgainText: string;
   greyRibbonVisible: boolean;
   yellowBlockButtonVisible: boolean;
   greenRibbonVisible: boolean;
@@ -133,6 +134,7 @@ export default class LevelCompleteOrFailed extends React.Component<
       modalCancelButtonOnClick,
       modalIsOpen,
       wantToPlayAgainTextVisible,
+      wantToPlayAgainText,
       greyRibbonVisible,
       yellowBlockButtonVisible,
       greenRibbonVisible,
@@ -155,6 +157,7 @@ export default class LevelCompleteOrFailed extends React.Component<
           <div className='modal-align-center'>
             <ModalContainer
               wantToPlayAgain={wantToPlayAgainTextVisible} //booloen
+              wantToPlayAgainText={wantToPlayAgainText} //string
               greyRibbon={greyRibbonVisible} //boolean
               greenRibbon={greenRibbonVisible} //boolean
               yellowBlockButton={yellowBlockButtonVisible} //boolean
@@ -184,6 +187,7 @@ Props available out of this component
   modalCancelButtonOnClick,
   modalIsOpen,
   wantToPlayAgainTextVisible,
+  wantToPlayAgainText,
   greyRibbonVisible,
   yellowBlockButtonVisible,
   greenRibbonVisible,
