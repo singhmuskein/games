@@ -1,0 +1,11 @@
+.cancel-button-container {
+  width: 36px;
+  height: 30px;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 3px;
+  font-size: x-large;
+}

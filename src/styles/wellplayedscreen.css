@@ -1,0 +1,23 @@
+.yellow-button-row-container {
+  display: flex;
+  margin: 5px 45px;
+}
+
+.early-dawn-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.early-dawn-and-yellow-button-container {
+  position: absolute;
+  top: 125%;
+  width: 100%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(-50%, -50%);
+}

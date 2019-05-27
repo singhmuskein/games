@@ -1,0 +1,44 @@
+.tool-tip-container {
+  display: flex;
+  margin: 45px 45px 0px 45px;
+}
+.img-container {
+  background-color: rgb(254, 239, 206);
+  border-radius: 30px;
+  padding: 5px;
+}
+.tooltip {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 10px;
+}
+.tooltiptext {
+  display: flex;
+  width: 50%;
+  background-color: rgb(254, 239, 206);
+  color: rgb(171, 126, 84);
+  font-size: 0.55rem;
+  padding: 10px;
+  border-radius: 8px;
+  position: absolute;
+  line-height: 13px;
+  font-size: 10px;
+  z-index: 1;
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent rgb(254, 239, 206) transparent transparent;
+}
+
+.image-circle {
+  width: 48px;
+  height: 48px;
+}

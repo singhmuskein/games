@@ -1,0 +1,14 @@
+.yellow-button {
+  width: 48%;
+  height: 40px;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0 1px 0 0 #c59920;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+}
+
+.yellow-button-text-size {
+  font-size: 13px;
+}

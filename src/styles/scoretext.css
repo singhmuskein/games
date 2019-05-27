@@ -1,0 +1,14 @@
+.score-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.score-text-string {
+  font-size: 14px;
+  opacity: 0.5;
+}
+.score-text-number {
+  font-size: 29px;
+}

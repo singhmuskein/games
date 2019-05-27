@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  margin: 0px 36px;
+  flex-direction: column;
+  background-color: #f8b52a;
+  border-radius: 5px;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 252, 246);
+  margin: 3px;
+  border-radius: 5px;
+}
+
+/* .overlay-ribbon {
+  width: 60%;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: center;
+  background-color: #949494;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: -23px;
+} */
+
+.yellow-button-container {
+  padding: 10px;
+}
+
+.yellow-button-text {
+  color: rgb(137, 78, 33);
+  font-size: 20px;
+  text-align: center;
+}
+
+.want-to-play-again-text {
+  text-align: center;
+  font-size: 10px;
+}

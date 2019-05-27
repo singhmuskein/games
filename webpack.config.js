@@ -3,9 +3,7 @@ const path = require("path");
 const DEV = process.env.NODE_ENV !== "production";
 
 module.exports = {
-  entry: {
-    app: ["./lib/index.jsx"]
-  },
+  entry: "./src/index.tsx",
   output: {
     path: path.join(__dirname, "bundle"),
     filename: "bundle.js"
@@ -20,6 +18,15 @@ module.exports = {
   module: {
     loaders: [
       {
+        test: /\.tsx$/,
+        loader: "awesome-typescript-loader" //typescript loader
+      },
+      {
+        enforce: "pre",
+        test: /\.js$/,
+        loader: "source-map-loader"
+      },
+      {
         test: /\.(js|jsx)$/,
         exclude: /node_modules\/.*/,
         loader: "babel-loader",
@@ -29,6 +36,21 @@ module.exports = {
             ["add-module-exports", { loose: true }],
             "transform-class-properties"
           ]
+        }
+      },
+      {
+        test: /\.css$/,
+        use: [
+          "style-loader",
+          { loader: "css-loader", options: { importLoaders: 1 } },
+          "postcss-loader"
+        ]
+      },
+      {
+        test: /\.(png|jpe?g|svg|ttf|woff2|woff)$/,
+        loader: "file-loader",
+        options: {
+          name: "assets/[name].[ext]"
         }
       }
     ]

@@ -1,0 +1,130 @@
+.bg-floral-white-color {
+  background-color: #fffcf6;
+}
+
+.bg-deep-sky-blue-color {
+  background-color: #03c4f9;
+}
+
+.bg-cinnabar-color {
+  background-color: #f24b22;
+}
+
+.bg-black-color {
+  background-color: black;
+}
+
+.bg-white-color {
+  background-color: white;
+}
+
+.bg-alice-blue-color {
+  background-color: aliceblue;
+}
+
+.bg-prussian-blue-color {
+  background-color: #04254c;
+}
+
+.bg-sands-stone-color {
+  background-color: #6f6963;
+}
+
+.bg-selective-yellow-color {
+  background-color: #fab600;
+}
+
+.bg-tundora-color {
+  background-color: #595552;
+}
+
+.bg-oasis-color {
+  background-color: #fef0cc;
+}
+
+.nunito-font-bold {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+}
+
+.nunito-font-regular {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+
+.nunito-font-extra-bold {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+}
+
+.roboto-font-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.roboto-font-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.roboto-font-extra-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+.font-color-white {
+  color: white;
+}
+
+.font-color-early-dawn {
+  color: #fff4da;
+}
+
+.font-color-taupe {
+  color: #3e3b37;
+}
+
+.font-color-saddle-brown {
+  color: #8a4e1b;
+}
+
+.font-color-oasis {
+  color: #fef0cc;
+}
+
+.font-color-black {
+  color: black;
+}
+
+.font-color-alice-blue {
+  color: aliceblue;
+}
+
+.font-color-suva-grey {
+  color: #8b8b8b;
+}
+
+.font-color-selective-yellow {
+  color: #fab600;
+}
+
+.display-content-and-items-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.yellow-box-shadow {
+  -webkit-box-shadow: 0px 2px 0px 0px #bc8900;
+  -moz-box-shadow: 0px 2px 0px 0px #bc8900;
+  box-shadow: 0px 2px 0px 0px #bc8900;
+}
+
+.align-ribbon {
+  position: relative;
+  top: -30px;
+}

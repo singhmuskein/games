@@ -1,0 +1,19 @@
+.modal-box-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 175px;
+  border-radius: 5px;
+  border: solid #fab600;
+  border-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.crown-img-container {
+  position: relative;
+  top: -12px;
+}
